@@ -321,7 +321,7 @@ main {
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: 405px; }
+.sidebar.active { max-height: 425px; }
 
 .sidebar-info {
   position: relative;
@@ -766,6 +766,13 @@ main {
 
 .article-title { margin-bottom: 30px; }
 
+.article-title2 {
+  position: relative; /* or absolute, depending on your layout */
+  top: 30px; /* moves the title 20px down from its current position */
+  left: auto; /* moves the title 50px right from its current position */
+  margin-bottom: 30px; /* retains the original bottom margin */
+}
+
 
 /**
  * education and experience 
@@ -1145,6 +1152,15 @@ main {
 
 .form-title { margin-bottom: 20px; }
 
+.form-option {
+  color: var(--white-2);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
+  padding: 13px 20px;
+  outline: none;
+}
+	
+
 .input-wrapper {
   display: grid;
   grid-template-columns: 1fr;
@@ -1161,6 +1177,15 @@ main {
   border-radius: 14px;
   outline: none;
 }
+
+.form-input-invalid {
+  color: #ff0000;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
+  padding: 13px 20px;
+  outline: none;
+}
+
 
 .form-input::placeholder { font-weight: var(--fw-500); }
 
@@ -1541,6 +1566,23 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
+.invalid-feedback,
+.empty-feedback {
+  display: none;
+}
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+  display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+  border-color: #dc3545;
+}
 
 
 
