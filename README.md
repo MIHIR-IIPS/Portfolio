@@ -7,9 +7,9 @@ Hello there! Welcome to the repository for my personal webpage. This site is a s
 To see the webpage live, click on the following link:
 https://mihir-iips.github.io/Portfolio
 
-!mobile Image
-!desktop Image
-
+## Demo
+![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
+![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
 
 ## Replicate My Webpage
 If you're interested in creating your own webpage, feel free to use my HTML code as a starting point. It's open-source and available for replication.
