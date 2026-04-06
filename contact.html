@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mihir Adhikary — Contact</title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar">
+    <div class="avatar-section">
+      <div class="avatar-wrap">
+        <div class="avatar-ring"></div>
+        <img src="./assets/images/my-avatar.png" alt="Mihir Adhikary">
+      </div>
+      <p class="sidebar-name">Mihir Adhikary</p>
+      <p class="sidebar-role">PhD Student</p>
+      <button class="show-contacts-btn" id="toggleContacts">Show Contacts ↓</button>
+    </div>
+    <div class="s-divider"></div>
+    <div class="contact-section" id="contactSection">
+      <ul class="contact-list">
+        <li class="contact-item">
+          <div class="contact-icon"><ion-icon name="mail-outline"></ion-icon></div>
+          <div>
+            <span class="contact-label">Email</span>
+            <span class="contact-value"><a href="mailto:mihiradhikary97@gmail.com">mihiradhikary97@gmail.com</a></span>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="contact-icon"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+          <div>
+            <span class="contact-label">Phone</span>
+            <span class="contact-value"><a href="tel:+918509636887">+91 8509636887</a></span>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="contact-icon"><ion-icon name="calendar-outline"></ion-icon></div>
+          <div>
+            <span class="contact-label">Birthday</span>
+            <span class="contact-value">August 05, 1997</span>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="contact-icon"><ion-icon name="location-outline"></ion-icon></div>
+          <div>
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Chembur, Mumbai, India</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="s-divider"></div>
+    <div class="social-section" id="socialSection">
+      <ul class="social-list">
+        <li><a href="https://www.facebook.com/mihir.adhikary.96" class="social-link" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="https://twitter.com/mihir_iips" class="social-link" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="https://www.instagram.com/your_mihir" class="social-link" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="https://github.com/MIHIR-IIPS" class="social-link" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+        <li><a href="https://www.linkedin.com/in/mihir-adhikary-7085a6149/" class="social-link" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <div class="main-content">
+
+    <nav class="navbar">
+      <a href="index.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="publication.html">Publication</a>
+      <a href="conference.html">Conference / Workshop</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <div class="page-header">
+      <h2>Contact</h2>
+      <div class="header-rule"></div>
+    </div>
+
+    <div class="contact-layout">
+
+      <!-- Map -->
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.334597711393!2d72.91224781078348!3d19.049020882075524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6123e904283%3A0x9b069990763b3fe9!2sInternational%20Institute%20for%20Population%20Sciences!5e0!3m2!1sen!2sbd!4v1712408456421!5m2!1sen!2sbd"
+          loading="lazy"
+          title="IIPS Mumbai"
+        ></iframe>
+        <p style="margin-top:0.75rem; font-size:0.82rem; color:var(--text-3);">
+          International Institute for Population Sciences, Mumbai
+        </p>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-card">
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          id="contactForm"
+          novalidate
+        >
+          <input type="hidden" name="access_key" value="2d098839-b1e4-46c9-bf2b-7020d78b2172">
+          <input type="hidden" name="subject" value="New contact request from your website">
+          <input type="checkbox" name="botcheck" style="display:none;">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="first_name">First Name</label>
+              <input type="text" id="first_name" name="name" class="form-input" placeholder="First name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="last_name">Last Name</label>
+              <input type="text" id="last_name" name="last_name" class="form-input" placeholder="Last name" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone</label>
+              <input type="text" id="phone" name="phone" class="form-input" placeholder="+91 0000000000" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea id="message" name="message" class="form-input" placeholder="Your message..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Send Message</button>
+          <p id="result"></p>
+        </form>
+      </div>
+
+    </div>
+
+  </div><!-- /main-content -->
+</div><!-- /layout -->
+
+<script>
+  // Form submission
+  const form = document.getElementById('contactForm');
+  const result = document.getElementById('result');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = form.querySelector('.btn-submit');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: json
+      });
+      const data = await res.json();
+      if (res.ok) {
+        result.textContent = 'Message sent successfully. Thank you!';
+        result.style.color = 'var(--accent)';
+        form.reset();
+      } else {
+        result.textContent = data.message || 'Something went wrong. Please try again.';
+        result.style.color = '#e05252';
+      }
+    } catch {
+      result.textContent = 'Network error. Please try again later.';
+      result.style.color = '#e05252';
+    }
+
+    btn.textContent = 'Send Message';
+    btn.disabled = false;
+  });
+
+  // Mobile contacts toggle
+  const btn = document.getElementById('toggleContacts');
+  const cs = document.getElementById('contactSection');
+  const ss = document.getElementById('socialSection');
+  if (btn) {
+    btn.addEventListener('click', () => {
+      cs.classList.toggle('open');
+      ss.classList.toggle('open');
+      btn.textContent = cs.classList.contains('open') ? 'Hide Contacts ↑' : 'Show Contacts ↓';
+    });
+  }
+</script>
+
+</body>
+</html>

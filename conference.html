@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mihir Adhikary — Conference &amp; Workshop</title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar">
+    <div class="avatar-section">
+      <div class="avatar-wrap">
+        <div class="avatar-ring"></div>
+        <img src="./assets/images/my-avatar.png" alt="Mihir Adhikary">
+      </div>
+      <p class="sidebar-name">Mihir Adhikary</p>
+      <p class="sidebar-role">PhD Student</p>
+      <button class="show-contacts-btn" id="toggleContacts">Show Contacts ↓</button>
+    </div>
+    <div class="s-divider"></div>
+    <div class="contact-section" id="contactSection">
+      <ul class="contact-list">
+        <li class="contact-item">
+          <div class="contact-icon"><ion-icon name="mail-outline"></ion-icon></div>
+          <div>
+            <span class="contact-label">Email</span>
+            <span class="contact-value"><a href="mailto:mihiradhikary97@gmail.com">mihiradhikary97@gmail.com</a></span>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="contact-icon"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+          <div>
+            <span class="contact-label">Phone</span>
+            <span class="contact-value"><a href="tel:+918509636887">+91 8509636887</a></span>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="contact-icon"><ion-icon name="calendar-outline"></ion-icon></div>
+          <div>
+            <span class="contact-label">Birthday</span>
+            <span class="contact-value">August 05, 1997</span>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="contact-icon"><ion-icon name="location-outline"></ion-icon></div>
+          <div>
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Chembur, Mumbai, India</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="s-divider"></div>
+    <div class="social-section" id="socialSection">
+      <ul class="social-list">
+        <li><a href="https://www.facebook.com/mihir.adhikary.96" class="social-link" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="https://twitter.com/mihir_iips" class="social-link" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="https://www.instagram.com/your_mihir" class="social-link" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="https://github.com/MIHIR-IIPS" class="social-link" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+        <li><a href="https://www.linkedin.com/in/mihir-adhikary-7085a6149/" class="social-link" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <div class="main-content">
+
+    <nav class="navbar">
+      <a href="index.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="publication.html">Publication</a>
+      <a href="conference.html" class="active">Conference / Workshop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="page-header">
+      <h2>Conference &amp; Workshop</h2>
+      <div class="header-rule"></div>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="national conference">National Conference</button>
+      <button class="filter-btn" data-filter="international conference">International Conference</button>
+      <button class="filter-btn" data-filter="workshop">Workshop</button>
+    </div>
+
+    <!-- Conference Grid -->
+    <div class="conf-grid" id="confGrid">
+
+      <a href="#" class="conf-card" data-category="international conference">
+        <div class="conf-img-wrap">
+          <img src="./assets/images/project-1.jpg" alt="PAA 2023" loading="lazy">
+          <div class="conf-overlay"></div>
+          <span class="conf-cat-badge">International</span>
+        </div>
+        <div class="conf-body">
+          <h4>PAA Annual Meeting 2023</h4>
+          <p><ion-icon name="location-outline"></ion-icon> New Orleans, USA</p>
+        </div>
+      </a>
+
+      <a href="#" class="conf-card" data-category="international conference">
+        <div class="conf-img-wrap">
+          <img src="./assets/images/project-2.jpg" alt="IUSSP 2023" loading="lazy">
+          <div class="conf-overlay"></div>
+          <span class="conf-cat-badge">International</span>
+        </div>
+        <div class="conf-body">
+          <h4>IUSSP Conference 2023</h4>
+          <p><ion-icon name="location-outline"></ion-icon> Hyderabad, India</p>
+        </div>
+      </a>
+
+      <a href="#" class="conf-card" data-category="national conference">
+        <div class="conf-img-wrap">
+          <img src="./assets/images/project-3.jpg" alt="IIPS National Conference 2024" loading="lazy">
+          <div class="conf-overlay"></div>
+          <span class="conf-cat-badge">National</span>
+        </div>
+        <div class="conf-body">
+          <h4>IIPS National Conference 2024</h4>
+          <p><ion-icon name="location-outline"></ion-icon> Banaras, UP, India</p>
+        </div>
+      </a>
+
+      <a href="#" class="conf-card" data-category="workshop">
+        <div class="conf-img-wrap">
+          <img src="./assets/images/project-4.jpg" alt="Remote Sensing and GIS" loading="lazy">
+          <div class="conf-overlay"></div>
+          <span class="conf-cat-badge">Workshop</span>
+        </div>
+        <div class="conf-body">
+          <h4>Remote Sensing and GIS</h4>
+          <p><ion-icon name="location-outline"></ion-icon> Trichy, Tamil Nadu, India</p>
+        </div>
+      </a>
+
+      <a href="#" class="conf-card" data-category="national conference">
+        <div class="conf-img-wrap">
+          <img src="./assets/images/project-5.jpg" alt="IASP Conference 2022" loading="lazy">
+          <div class="conf-overlay"></div>
+          <span class="conf-cat-badge">National</span>
+        </div>
+        <div class="conf-body">
+          <h4>IASP Conference 2022</h4>
+          <p><ion-icon name="location-outline"></ion-icon> Udaipur, Rajasthan, India</p>
+        </div>
+      </a>
+
+      <a href="#" class="conf-card" data-category="workshop">
+        <div class="conf-img-wrap">
+          <img src="./assets/images/project-8.png" alt="Gridded Population Data" loading="lazy">
+          <div class="conf-overlay"></div>
+          <span class="conf-cat-badge">Workshop</span>
+        </div>
+        <div class="conf-body">
+          <h4>Gridded Population Data</h4>
+          <p><ion-icon name="location-outline"></ion-icon> IIPS, Mumbai, India</p>
+        </div>
+      </a>
+
+      <a href="#" class="conf-card" data-category="workshop">
+        <div class="conf-img-wrap">
+          <img src="./assets/images/project-9.jpg" alt="Harmonized Ageing Data" loading="lazy">
+          <div class="conf-overlay"></div>
+          <span class="conf-cat-badge">Workshop</span>
+        </div>
+        <div class="conf-body">
+          <h4>Harmonized Ageing Data</h4>
+          <p><ion-icon name="location-outline"></ion-icon> IIPS, Mumbai, India</p>
+        </div>
+      </a>
+
+      <a href="#" class="conf-card" data-category="workshop">
+        <div class="conf-img-wrap">
+          <img src="./assets/images/project-10.jpg" alt="Mumbai Water Conclave" loading="lazy">
+          <div class="conf-overlay"></div>
+          <span class="conf-cat-badge">Workshop</span>
+        </div>
+        <div class="conf-body">
+          <h4>Mumbai Water Conclave</h4>
+          <p><ion-icon name="location-outline"></ion-icon> IIPS, Mumbai, India</p>
+        </div>
+      </a>
+
+    </div><!-- /conf-grid -->
+
+  </div><!-- /main-content -->
+</div><!-- /layout -->
+
+<script>
+  // Filter logic
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.conf-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        if (filter === 'all' || cat === filter) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Mobile contacts toggle
+  const btn = document.getElementById('toggleContacts');
+  const cs = document.getElementById('contactSection');
+  const ss = document.getElementById('socialSection');
+  if (btn) {
+    btn.addEventListener('click', () => {
+      cs.classList.toggle('open');
+      ss.classList.toggle('open');
+      btn.textContent = cs.classList.contains('open') ? 'Hide Contacts ↑' : 'Show Contacts ↓';
+    });
+  }
+</script>
+
+</body>
+</html>
